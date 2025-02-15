@@ -1,0 +1,131 @@
+body {
+    width: 1200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #393E46;
+    line-height: 20px;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    color: #24292E;
+}
+.nav-about {
+    margin-right: 30px;
+}
+
+.main-visual {
+width: 1280px;
+margin: 0 auto;
+}
+.main-img {
+    width: 1280px;
+    object-fit: none;
+}
+
+.about-title {
+    display: block;
+    text-align: center;
+    width: 101px;
+    margin: 70px auto;
+    font-size: 32px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 907px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    margin-right: 30px;
+}
+
+.profile-about {
+    width: 403px;
+}
+
+.bicycle-img-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.bicycle-box {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 700px) {
+    body {
+        width: 375px;
+    }
+    .header {
+        width: 375px;
+    }
+    .main {
+        width: 375px;
+    }
+    .main-img {
+        object-fit: cover;
+        width: 375px;
+    }
+    .main-visual {
+        width: 375px;
+        margin: inherit;
+    }
+    .profile {
+        width: 375px;
+    }
+    .bicycle-img-list {
+        flex-direction: column;
+    }
+}
+/* @media (max-width: 767px) {
+    .header {
+        width: 375px;
+    }
+    .main-visual {
+        width: 375px;
+    }
+
+    }
+    .main-img {
+        object-fit: cover;
+        width: 375px;
+    }
+
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        margin: 0 auto;
+    }
+    .bicycle-img-list{
+        display: block;
+    }
+
+ */

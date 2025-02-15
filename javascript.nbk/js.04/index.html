@@ -27,8 +27,44 @@
                 </tr>
             </tbody>
         </table>
+
+        <form action="#">
+            <table>
+                <tbody>
+                    <tr class="postalCode">
+                        <td>郵便番号</td>
+                        <td>
+                            <input
+                                type="text"
+                                id="postalCode"
+                                required="required"
+                                title="text"
+                            />
+                            <button id="js-btn">住所検索</button>
+                        </td>
+                    </tr>
+                    <tr class="address1">
+                        <td>都道府県</td>
+                        <td>
+                            <input type="text" id="address1" title="text" />
+                        </td>
+                    </tr>
+                    <tr class="address2">
+                        <td>市区町村</td>
+                        <td>
+                            <input type="text" id="address2" title="text" />
+                        </td>
+                    </tr>
+                    <tr class="address3">
+                        <td>その他住所</td>
+                        <td>
+                            <input type="text" id="address3" title="text" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
         <script type="text/javascript" src="create.js"></script>
-        <script type="text/javascript" src="create.js2/data.json"></script>
         <!-- <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

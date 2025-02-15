@@ -1,0 +1,89 @@
+.title-logo {
+    display: inline-block;
+    margin-left: 217px;
+}
+.nav {
+    display: flex;
+    width: 1600px;
+    height: 41px;
+    background-color: #333333;
+    color: #fff;
+}
+.nav-list {
+    display: flex;
+    column-gap: 61px;
+    font-size: 14px;
+    justify-content: left;
+    align-items:center;
+    list-style-type: none;
+    margin-left: 180px;
+}
+
+.pickup {
+    display: flex;
+    column-gap: 23px;
+    margin-left: 217px;
+    margin-top: 39px;
+}
+.pickup-list {
+    display: block;
+}
+.pickup-text {
+    margin: 0px;
+}
+.readmore {
+    display: block;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+}
+.contents1 {
+    margin-top: 70px;
+    margin-left: 217px;
+}
+.contents1-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+.contents1-category {
+    display: flex;
+    column-gap: 32px;
+    list-style-type: none;
+    margin: 13px auto;
+    padding: 0;
+    color: #333333;
+    font-size: 12px;
+}
+.contents1-text {
+    display: block;
+    width: 667px;
+    margin: 0 auto;
+    color: #333333;
+}
+.contents1-readmore {
+    display: block;
+    width: 667px;
+    margin: 0 auto;
+}
+
+.contents2 {
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.profile {
+    display: block;
+    text-align: center;
+}
+.profile-img {
+    border-radius: 50%;
+}
+
+
+.footer-contents{
+    display: flex;
+}

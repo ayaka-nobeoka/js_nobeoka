@@ -3,15 +3,14 @@
 async function loadData() {
     try {
         const response = await fetch("data.json");
+        const data = await response.json();
+        //配列に変換
 
-        // タイムアウトを設定する場合は、独自のタイムアウトロジックを実装する必要があります
-        const timeout = new Promise((_, reject) =>
-            setTimeout(() => reject(new Error("Request timed out")), 5000)
-        );
+        // async awaitで非同期で持ってくる
+        // async functionの中でawaitを使うと、値が返るまでそこで処理をストップし、同期処理っぽく書くことができる
+        // fetchを使ってリクエストを送る
 
-        const data = await Promise.race([response.json(), timeout]);
-
-        if (!response.ok) {
+        if (!response) {
             throw new Error(
                 "Network response was not ok " + response.statusText
             );
@@ -47,3 +46,5 @@ document.getElementById("btn").addEventListener("click", loadData);
 // response.json()でレスポンスをJSONとしてパースします。
 // タイムアウトを設定するためには、Promise.raceを使って、一定時間後にリジェクトするPromiseを組み合わせます。
 // jQueryを使わずにJavaScriptだけで同様の機能を実装することができます。
+
+const btn = document.getElementById("js-btn");
